@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.header{
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+.perfil{
+    max-width: 30%;
+    margin: auto;
+    min-width: 150px;
+    border-radius: 32px;
+}
+.nombre{
+    font-weight: 600;
+    font-size: 14px;
+}
+.ciudad{
+    font-weight: 600;
+    font-size: 10px;
+    color: #a9a9a9;
+}
+.article{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+.box{
+    background: #E5E5E5;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 78px;
+    height: 52px;
+}
+.box b, .box p{
+    font-size: 12px;
+}
+.box p{
+    font-weight: 600;
+    color: #bdbdbd;
+}
+.main{
+    width: calc(100% - 1.5em);
+    margin: 2.5rem auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "flor sillon sillon"
+        "bañera bañera luz"
+        "meseta planta luz";
+}
+.imagenes img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 1rem;
+}
+.flor{
+    grid-area: flor;
+}
+.sillon{
+    grid-area: sillon;
+}
+.bañera{
+    grid-area: bañera;
+}
+.luz{
+    grid-area: luz;
+}
+.meseta{
+    grid-area: meseta;
+}
+.planta{
+    grid-area: planta;
+}
+.footer{
+    text-align: center;
+    padding: 1.5rem 0;
+}
+.footer a{
+    text-decoration: none;
+    color: #bdbdbd;
+}
+
+@media (min-width:768px){
+    body{
+        max-width: 1280px;
+        margin: auto;
+    }
+    .main{
+        max-width: 80vw;
+    }
+    .nombre{
+        font-size: calc(.875rem + .5vw);
+    }
+    .box b, .box p{
+        font-size: calc(.75rem + .5vw);
+    }
+    .ciudad{
+        font-size: calc(.625rem + .5vw);
+    }
+    .box{
+        padding: 4rem;
+        
+    }
+}
